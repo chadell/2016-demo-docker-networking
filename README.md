@@ -1,6 +1,6 @@
-# Materials for 2016 DevOps Networking Forum (DNF) Presentation
+# Materials for Linux and Container networking Presentation
 
-This repository contains materials for my presentation at the 2016 DevOps Networking Forum (DNF). Here's an explanation of the files in this repository:
+Here's an explanation of the files in this repository:
 
 * `ansible.cfg`: This is an Ansible configuration file that helps Ansible work better with Vagrant.
 
