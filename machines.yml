@@ -1,25 +1,25 @@
 ---
 - name: kvm-01
-  box: slowe/ubuntu-trusty-x64
+  box: hashicorp/precise64  
   ram: 1024
   vcpu: 1
   ip_addr: 192.168.100.100
   nested: true
   provision: kvm.yml
 - name: docker-01
-  box: slowe/ubuntu-trusty-x64
+  box: ubuntu/trusty64  
   ram: 1024
   vcpu: 1
   ip_addr: 192.168.100.101
   provision: docker.yml
 - name: ns-01
-  box: slowe/ubuntu-trusty-x64
+  box: hashicorp/precise64  
   ram: 256
   vcpu: 1
   ip_addr: 192.168.100.102
   provision: ns.yml
 - name: remote-01
-  box: slowe/ubuntu-trusty-x64
+  box: hashicorp/precise64  
   ram: 256
   vcpu: 1
   ip_addr: 192.168.100.110

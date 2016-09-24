@@ -4,8 +4,8 @@
 # Specify Vagrant version, Vagrant API version, and desired clone location
 Vagrant.require_version '>= 1.6.0'
 VAGRANTFILE_API_VERSION = '2'
-ENV['VAGRANT_DEFAULT_PROVIDER'] = 'vmware_fusion'
-ENV['VAGRANT_VMWARE_CLONE_DIRECTORY'] = '~/.vagrant'
+#ENV['VAGRANT_DEFAULT_PROVIDER'] = 'vmware_fusion'
+#ENV['VAGRANT_VMWARE_CLONE_DIRECTORY'] = '~/.vagrant'
 
 # Require 'yaml' module
 require 'yaml'
