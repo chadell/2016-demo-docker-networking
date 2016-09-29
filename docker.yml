@@ -32,6 +32,7 @@
     - docker-engine
     - unzip
     - ethtool
+    - bridge-utils
 
   - name: "Customize Docker daemon configuration"
     lineinfile:
@@ -56,6 +57,10 @@
     with_items:
       - docker-setup.sh
       - docker-aliases
+      - demo-docker-basic.sh
+      - demo-docker-network.sh
+      - demo-docker-swarm-01.sh
+      - demo-docker-swarm-02.sh
 
   - name: "Make scripts executable"
     file:
@@ -63,3 +68,7 @@
       mode: "0755"
     with_items:
       - docker-setup.sh
+      - demo-docker-basic.sh
+      - demo-docker-network.sh
+      - demo-docker-swarm-01.sh
+      - demo-docker-swarm-02.sh
