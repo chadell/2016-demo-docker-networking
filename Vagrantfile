@@ -56,5 +56,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         end # srv.vm.provision
       end # if machine['provision']
     end # config.vm.define
+
+    config.vm.provider "virtualbox" do|vb|
+      # change to promisc mode
+      vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
+    end # config.vm.provider
+
   end # machines.each
 end # Vagrant.configure

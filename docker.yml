@@ -42,7 +42,7 @@
       owner: "root"
       group: "root"
       mode: "0644"
-    
+
   - name: "Start Docker service"
     service:
       name: "docker"
@@ -61,6 +61,7 @@
       - demo-docker-network.sh
       - demo-docker-swarm-01.sh
       - demo-docker-swarm-02.sh
+      - demo-docker-macvlan.sh
 
   - name: "Make scripts executable"
     file:
@@ -72,3 +73,4 @@
       - demo-docker-network.sh
       - demo-docker-swarm-01.sh
       - demo-docker-swarm-02.sh
+      - demo-docker-macvlan.sh
