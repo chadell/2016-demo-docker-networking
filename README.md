@@ -1,6 +1,21 @@
-# Materials for Linux and Container networking Presentation
+# Getting started with the demo scenario
 
-Here's an explanation of the files in this repository:
+1- Clone this github repository
+
+2- Start three VM (all of them are connected through a bridge (192.168.100.0/24) by internal eth1 interface):
+* `vagrant up remote-01`: Basic VM used as an external remote host
+* `vagrant up docker-01`: A VM with Docker v.1.12.1 installed
+* `vagrant up docker-02`: A VM with Docker v.1.12.1 installed
+
+3- Run and enjoy the 4 demos!
+* Demo1: Explore basic Docker networking default behaviour - Run `./demo-docker-basic.sh`inside Docker-01 host (`vagrant ssh docker-01`)
+* Demo2: Play with basic network commands - Run `./demo-docker-network.sh`inside Docker-01  
+* Demo3: Create overlay networking usign Swarm cluster between hosts Docker-01 and Docker-02 - Run `./demo-docker-swarm-01.sh`inside Docker-01  and `./demo-docker-swarm-02.sh`inside Docker-02 (start in Docker-01)
+* Demo4: Validate macvlan network mode in Docker - Run `./demo-docker-macvlan.sh`inside Docker-01 and try to reach external Remote-01 host
+
+# Materials for Docker networking Presentation
+
+Here's an explanation of the files in this repository (some of them are not used in this demo):
 
 * `ansible.cfg`: This is an Ansible configuration file that helps Ansible work better with Vagrant.
 
